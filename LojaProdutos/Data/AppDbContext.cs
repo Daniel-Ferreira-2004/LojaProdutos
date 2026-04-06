@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using LojaProdutos.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace LojaProdutos.Data
 {
@@ -7,5 +8,7 @@ namespace LojaProdutos.Data
         public AppDbContext(DbContextOptions options) : base(options)
         {
         }
+        public DbSet<CategoriaModel> Categorias { get; set; }
+        public DbSet<ProdutosModel> Produtos { get; set; }
     }
 }
