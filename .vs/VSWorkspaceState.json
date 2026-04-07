@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\LojaProdutos",
+    "\\LojaProdutos\\Models"
   ],
+  "SelectedNode": "\\LojaProdutos\\Models\\ProdutosModel.cs",
   "PreviewInSolutionExplorer": false
 }

@@ -1,4 +1,5 @@
 using LojaProdutos.Data;
+using LojaProdutos.Services.Produtos;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -10,6 +11,8 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaltConnection"));
 });
+
+builder.Services.AddScoped<IProdutosInterface, ProdutosServices>();
 
 var app = builder.Build();
 

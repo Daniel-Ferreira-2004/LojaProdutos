@@ -1,18 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\daniel.ferreira\\Documents\\Curso CrisTech\\LojaProdutos\\LojaProdutos\\",
+  "WorkspaceRootPath": "C:\\Users\\Daniel\\Documents\\GitHub\\LojaProdutos\\LojaProdutos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F5B47162-6706-4376-8CB0-BAFF0572BCCE}|LojaProdutos.csproj|c:\\users\\daniel.ferreira\\documents\\curso cristech\\lojaprodutos\\lojaprodutos\\models\\produtosmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F5B47162-6706-4376-8CB0-BAFF0572BCCE}|LojaProdutos.csproj|solutionrelative:models\\produtosmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F5B47162-6706-4376-8CB0-BAFF0572BCCE}|LojaProdutos.csproj|c:\\users\\daniel\\documents\\github\\lojaprodutos\\lojaprodutos\\services\\produtos\\iprodutosinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5B47162-6706-4376-8CB0-BAFF0572BCCE}|LojaProdutos.csproj|solutionrelative:services\\produtos\\iprodutosinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F5B47162-6706-4376-8CB0-BAFF0572BCCE}|LojaProdutos.csproj|c:\\users\\daniel.ferreira\\documents\\curso cristech\\lojaprodutos\\lojaprodutos\\models\\categoriamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F5B47162-6706-4376-8CB0-BAFF0572BCCE}|LojaProdutos.csproj|solutionrelative:models\\categoriamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F5B47162-6706-4376-8CB0-BAFF0572BCCE}|LojaProdutos.csproj|c:\\users\\daniel\\documents\\github\\lojaprodutos\\lojaprodutos\\services\\produtos\\produtosservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5B47162-6706-4376-8CB0-BAFF0572BCCE}|LojaProdutos.csproj|solutionrelative:services\\produtos\\produtosservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F5B47162-6706-4376-8CB0-BAFF0572BCCE}|LojaProdutos.csproj|c:\\users\\daniel.ferreira\\documents\\curso cristech\\lojaprodutos\\lojaprodutos\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F5B47162-6706-4376-8CB0-BAFF0572BCCE}|LojaProdutos.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F5B47162-6706-4376-8CB0-BAFF0572BCCE}|LojaProdutos.csproj|c:\\users\\daniel\\documents\\github\\lojaprodutos\\lojaprodutos\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5B47162-6706-4376-8CB0-BAFF0572BCCE}|LojaProdutos.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5B47162-6706-4376-8CB0-BAFF0572BCCE}|LojaProdutos.csproj|c:\\users\\daniel\\documents\\github\\lojaprodutos\\lojaprodutos\\controllers\\produtoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5B47162-6706-4376-8CB0-BAFF0572BCCE}|LojaProdutos.csproj|solutionrelative:controllers\\produtoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,8 +26,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Daniel\\Documents\\GitHub\\LojaProdutos\\LojaProdutos\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Daniel\\Documents\\GitHub\\LojaProdutos\\LojaProdutos\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-07T01:32:37.465Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
@@ -42,41 +59,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\daniel.ferreira\\Documents\\Curso CrisTech\\LojaProdutos\\LojaProdutos\\Data\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\daniel.ferreira\\Documents\\Curso CrisTech\\LojaProdutos\\LojaProdutos\\Data\\AppDbContext.cs",
-              "RelativeToolTip": "Data\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "ProdutosController.cs",
+              "DocumentMoniker": "C:\\Users\\Daniel\\Documents\\GitHub\\LojaProdutos\\LojaProdutos\\Controllers\\ProdutosController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProdutosController.cs",
+              "ToolTip": "C:\\Users\\Daniel\\Documents\\GitHub\\LojaProdutos\\LojaProdutos\\Controllers\\ProdutosController.cs",
+              "RelativeToolTip": "Controllers\\ProdutosController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-06T19:57:56.61Z",
+              "WhenOpened": "2026-04-07T01:31:40.594Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ProdutosModel.cs",
-              "DocumentMoniker": "C:\\Users\\daniel.ferreira\\Documents\\Curso CrisTech\\LojaProdutos\\LojaProdutos\\Models\\ProdutosModel.cs",
-              "RelativeDocumentMoniker": "Models\\ProdutosModel.cs",
-              "ToolTip": "C:\\Users\\daniel.ferreira\\Documents\\Curso CrisTech\\LojaProdutos\\LojaProdutos\\Models\\ProdutosModel.cs",
-              "RelativeToolTip": "Models\\ProdutosModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAOAAAAAAAAAA==",
+              "Title": "IProdutosInterface.cs",
+              "DocumentMoniker": "C:\\Users\\Daniel\\Documents\\GitHub\\LojaProdutos\\LojaProdutos\\Services\\Produtos\\IProdutosInterface.cs",
+              "RelativeDocumentMoniker": "Services\\Produtos\\IProdutosInterface.cs",
+              "ToolTip": "C:\\Users\\Daniel\\Documents\\GitHub\\LojaProdutos\\LojaProdutos\\Services\\Produtos\\IProdutosInterface.cs",
+              "RelativeToolTip": "Services\\Produtos\\IProdutosInterface.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-06T19:53:40.097Z",
+              "WhenOpened": "2026-04-07T01:30:28.835Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "CategoriaModel.cs",
-              "DocumentMoniker": "C:\\Users\\daniel.ferreira\\Documents\\Curso CrisTech\\LojaProdutos\\LojaProdutos\\Models\\CategoriaModel.cs",
-              "RelativeDocumentMoniker": "Models\\CategoriaModel.cs",
-              "ToolTip": "C:\\Users\\daniel.ferreira\\Documents\\Curso CrisTech\\LojaProdutos\\LojaProdutos\\Models\\CategoriaModel.cs",
-              "RelativeToolTip": "Models\\CategoriaModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Title": "ProdutosServices.cs",
+              "DocumentMoniker": "C:\\Users\\Daniel\\Documents\\GitHub\\LojaProdutos\\LojaProdutos\\Services\\Produtos\\ProdutosServices.cs",
+              "RelativeDocumentMoniker": "Services\\Produtos\\ProdutosServices.cs",
+              "ToolTip": "C:\\Users\\Daniel\\Documents\\GitHub\\LojaProdutos\\LojaProdutos\\Services\\Produtos\\ProdutosServices.cs",
+              "RelativeToolTip": "Services\\Produtos\\ProdutosServices.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-06T19:51:05.693Z",
+              "WhenOpened": "2026-04-07T01:29:47.863Z",
               "EditorCaption": ""
             }
           ]
