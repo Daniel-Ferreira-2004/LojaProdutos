@@ -3,24 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Daniel\\Documents\\GitHub\\LojaProdutos\\LojaProdutos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Daniel\\Documents\\GitHub\\LojaProdutos\\LojaProdutos\\Migrations\\20260407003237_tabela2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20260407003237_tabela2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F5B47162-6706-4376-8CB0-BAFF0572BCCE}|LojaProdutos.csproj|c:\\users\\daniel\\documents\\github\\lojaprodutos\\lojaprodutos\\services\\produtos\\iprodutosinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5B47162-6706-4376-8CB0-BAFF0572BCCE}|LojaProdutos.csproj|solutionrelative:services\\produtos\\iprodutosinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F5B47162-6706-4376-8CB0-BAFF0572BCCE}|LojaProdutos.csproj|c:\\users\\daniel\\documents\\github\\lojaprodutos\\lojaprodutos\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{F5B47162-6706-4376-8CB0-BAFF0572BCCE}|LojaProdutos.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{F5B47162-6706-4376-8CB0-BAFF0572BCCE}|LojaProdutos.csproj|c:\\users\\daniel\\documents\\github\\lojaprodutos\\lojaprodutos\\services\\produtos\\produtosservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5B47162-6706-4376-8CB0-BAFF0572BCCE}|LojaProdutos.csproj|solutionrelative:services\\produtos\\produtosservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F5B47162-6706-4376-8CB0-BAFF0572BCCE}|LojaProdutos.csproj|c:\\users\\daniel\\documents\\github\\lojaprodutos\\lojaprodutos\\models\\produtosmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F5B47162-6706-4376-8CB0-BAFF0572BCCE}|LojaProdutos.csproj|solutionrelative:models\\produtosmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F5B47162-6706-4376-8CB0-BAFF0572BCCE}|LojaProdutos.csproj|c:\\users\\daniel\\documents\\github\\lojaprodutos\\lojaprodutos\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5B47162-6706-4376-8CB0-BAFF0572BCCE}|LojaProdutos.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F5B47162-6706-4376-8CB0-BAFF0572BCCE}|LojaProdutos.csproj|c:\\users\\daniel\\documents\\github\\lojaprodutos\\lojaprodutos\\models\\categoriamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F5B47162-6706-4376-8CB0-BAFF0572BCCE}|LojaProdutos.csproj|solutionrelative:models\\categoriamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F5B47162-6706-4376-8CB0-BAFF0572BCCE}|LojaProdutos.csproj|c:\\users\\daniel\\documents\\github\\lojaprodutos\\lojaprodutos\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F5B47162-6706-4376-8CB0-BAFF0572BCCE}|LojaProdutos.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F5B47162-6706-4376-8CB0-BAFF0572BCCE}|LojaProdutos.csproj|c:\\users\\daniel\\documents\\github\\lojaprodutos\\lojaprodutos\\controllers\\produtoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5B47162-6706-4376-8CB0-BAFF0572BCCE}|LojaProdutos.csproj|solutionrelative:controllers\\produtoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,34 +26,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 6,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "20260407003237_tabela2.cs",
-              "DocumentMoniker": "C:\\Users\\Daniel\\Documents\\GitHub\\LojaProdutos\\LojaProdutos\\Migrations\\20260407003237_tabela2.cs",
-              "RelativeDocumentMoniker": "Migrations\\20260407003237_tabela2.cs",
-              "ToolTip": "C:\\Users\\Daniel\\Documents\\GitHub\\LojaProdutos\\LojaProdutos\\Migrations\\20260407003237_tabela2.cs",
-              "RelativeToolTip": "Migrations\\20260407003237_tabela2.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-07T00:32:37.809Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Daniel\\Documents\\GitHub\\LojaProdutos\\LojaProdutos\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\Daniel\\Documents\\GitHub\\LojaProdutos\\LojaProdutos\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABLAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-04-07T00:31:49.844Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
@@ -76,40 +46,52 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Daniel\\Documents\\GitHub\\LojaProdutos\\LojaProdutos\\Data\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\Daniel\\Documents\\GitHub\\LojaProdutos\\LojaProdutos\\Data\\AppDbContext.cs",
-              "RelativeToolTip": "Data\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-06T19:57:56.61Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ProdutosModel.cs",
-              "DocumentMoniker": "C:\\Users\\Daniel\\Documents\\GitHub\\LojaProdutos\\LojaProdutos\\Models\\ProdutosModel.cs",
-              "RelativeDocumentMoniker": "Models\\ProdutosModel.cs",
-              "ToolTip": "C:\\Users\\Daniel\\Documents\\GitHub\\LojaProdutos\\LojaProdutos\\Models\\ProdutosModel.cs",
-              "RelativeToolTip": "Models\\ProdutosModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAOAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Daniel\\Documents\\GitHub\\LojaProdutos\\LojaProdutos\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Daniel\\Documents\\GitHub\\LojaProdutos\\LojaProdutos\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-06T19:53:40.097Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-07T01:32:37.465Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "CategoriaModel.cs",
-              "DocumentMoniker": "C:\\Users\\Daniel\\Documents\\GitHub\\LojaProdutos\\LojaProdutos\\Models\\CategoriaModel.cs",
-              "RelativeDocumentMoniker": "Models\\CategoriaModel.cs",
-              "ToolTip": "C:\\Users\\Daniel\\Documents\\GitHub\\LojaProdutos\\LojaProdutos\\Models\\CategoriaModel.cs",
-              "RelativeToolTip": "Models\\CategoriaModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Title": "ProdutosController.cs",
+              "DocumentMoniker": "C:\\Users\\Daniel\\Documents\\GitHub\\LojaProdutos\\LojaProdutos\\Controllers\\ProdutosController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProdutosController.cs",
+              "ToolTip": "C:\\Users\\Daniel\\Documents\\GitHub\\LojaProdutos\\LojaProdutos\\Controllers\\ProdutosController.cs",
+              "RelativeToolTip": "Controllers\\ProdutosController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-06T19:51:05.693Z"
+              "WhenOpened": "2026-04-07T01:31:40.594Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "IProdutosInterface.cs",
+              "DocumentMoniker": "C:\\Users\\Daniel\\Documents\\GitHub\\LojaProdutos\\LojaProdutos\\Services\\Produtos\\IProdutosInterface.cs",
+              "RelativeDocumentMoniker": "Services\\Produtos\\IProdutosInterface.cs",
+              "ToolTip": "C:\\Users\\Daniel\\Documents\\GitHub\\LojaProdutos\\LojaProdutos\\Services\\Produtos\\IProdutosInterface.cs",
+              "RelativeToolTip": "Services\\Produtos\\IProdutosInterface.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-07T01:30:28.835Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProdutosServices.cs",
+              "DocumentMoniker": "C:\\Users\\Daniel\\Documents\\GitHub\\LojaProdutos\\LojaProdutos\\Services\\Produtos\\ProdutosServices.cs",
+              "RelativeDocumentMoniker": "Services\\Produtos\\ProdutosServices.cs",
+              "ToolTip": "C:\\Users\\Daniel\\Documents\\GitHub\\LojaProdutos\\LojaProdutos\\Services\\Produtos\\ProdutosServices.cs",
+              "RelativeToolTip": "Services\\Produtos\\ProdutosServices.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-07T01:29:47.863Z"
             }
           ]
         }
