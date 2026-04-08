@@ -1,12 +1,21 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using LojaProdutos.Models;
+using LojaProdutos.Services.Produtos;
+using Microsoft.AspNetCore.Mvc;
 
 namespace LojaProdutos.Controllers
 {
     public class ProdutosController : Controller
     {
-        public IActionResult Index()
+        private readonly IProdutosInterface  _produtosInterface;
+
+        public ProdutosController(IProdutosInterface produtosInterface)
         {
-            return View();
+            _produtosInterface = produtosInterface;
+        }
+        public async Task<IActionResult> BuscarProdutos()
+        {
+            var produtos = await _produtosInterface.BuscarProdutos();
+            return View(produtos);
         }
     }
 }
