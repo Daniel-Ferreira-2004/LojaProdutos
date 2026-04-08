@@ -1,0 +1,52 @@
+﻿@using LojaProdutos.Models
+@model List<ProdutosModel>
+
+<div class="container mt-5">
+    <h2>Listagem de Produtos</h2>
+    <a class="btn btn-success">Cadastrar novo Porduto</a>
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <table class="table table-hover table-bordered">
+            <thead class="table-dark">
+                <tr>
+                    <th></th>
+                    <th>Nome</th>
+                    <th>Marca</th>
+                    <th>Categoria</th>
+                    <th>Estoque</th>
+                    <th>Descricao</th>
+                    <th>Valor</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model.Count() > 0)
+                {
+                    @foreach (var produto in Model)
+                    {
+                        <tr>
+                            @if (produto.Foto != null)
+                            {
+                                <td><img src="@produto.Foto" alt="Foto do Produto"></td>
+                            }
+                            else
+                            {
+                                <td><span class="text-muted">Sem foto</span></td>
+                            }
+                            <td>@produto.Nome</td>
+                            <td>@produto.Marca</td>
+                            <td>@produto.Categoria.Nome</td>
+                            <td>@produto.QuantidadeEstoque</td>
+                            <td>@produto.Descricao</td>
+                            <td>R$ @produto.Valor.ToString("F")</td>
+
+                            <td>
+                                <a class="btn btn-success">Editar</a>
+                                <a class="btn btn-danger">Excluir</a>
+                            </td>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

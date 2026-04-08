@@ -12,7 +12,7 @@ namespace LojaProdutos.Controllers
         {
             _produtosInterface = produtosInterface;
         }
-        public async Task<IActionResult> BuscarProdutos()
+        public async Task<IActionResult> Index()
         {
             var produtos = await _produtosInterface.BuscarProdutos();
             return View(produtos);
