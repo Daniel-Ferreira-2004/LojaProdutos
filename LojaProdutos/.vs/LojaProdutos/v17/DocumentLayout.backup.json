@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\daniel.ferreira\\Documents\\Curso CrisTech\\LojaProdutos\\LojaProdutos\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F5B47162-6706-4376-8CB0-BAFF0572BCCE}|LojaProdutos.csproj|c:\\users\\daniel.ferreira\\documents\\curso cristech\\lojaprodutos\\lojaprodutos\\services\\categorias\\categoriaservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5B47162-6706-4376-8CB0-BAFF0572BCCE}|LojaProdutos.csproj|solutionrelative:services\\categorias\\categoriaservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5B47162-6706-4376-8CB0-BAFF0572BCCE}|LojaProdutos.csproj|c:\\users\\daniel.ferreira\\documents\\curso cristech\\lojaprodutos\\lojaprodutos\\services\\categorias\\icategoriainterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5B47162-6706-4376-8CB0-BAFF0572BCCE}|LojaProdutos.csproj|solutionrelative:services\\categorias\\icategoriainterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5B47162-6706-4376-8CB0-BAFF0572BCCE}|LojaProdutos.csproj|c:\\users\\daniel.ferreira\\documents\\curso cristech\\lojaprodutos\\lojaprodutos\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5B47162-6706-4376-8CB0-BAFF0572BCCE}|LojaProdutos.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F5B47162-6706-4376-8CB0-BAFF0572BCCE}|LojaProdutos.csproj|c:\\users\\daniel.ferreira\\documents\\curso cristech\\lojaprodutos\\lojaprodutos\\views\\produtos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{F5B47162-6706-4376-8CB0-BAFF0572BCCE}|LojaProdutos.csproj|solutionrelative:views\\produtos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F5B47162-6706-4376-8CB0-BAFF0572BCCE}|LojaProdutos.csproj|c:\\users\\daniel.ferreira\\documents\\curso cristech\\lojaprodutos\\lojaprodutos\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{F5B47162-6706-4376-8CB0-BAFF0572BCCE}|LojaProdutos.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F5B47162-6706-4376-8CB0-BAFF0572BCCE}|LojaProdutos.csproj|c:\\users\\daniel.ferreira\\documents\\curso cristech\\lojaprodutos\\lojaprodutos\\models\\produtosmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F5B47162-6706-4376-8CB0-BAFF0572BCCE}|LojaProdutos.csproj|solutionrelative:models\\produtosmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,8 +26,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 5,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\daniel.ferreira\\Documents\\Curso CrisTech\\LojaProdutos\\LojaProdutos\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\daniel.ferreira\\Documents\\Curso CrisTech\\LojaProdutos\\LojaProdutos\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T20:38:29.926Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
@@ -42,31 +59,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\daniel.ferreira\\Documents\\Curso CrisTech\\LojaProdutos\\LojaProdutos\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\daniel.ferreira\\Documents\\Curso CrisTech\\LojaProdutos\\LojaProdutos\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-04-08T20:02:32.589Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ProdutosModel.cs",
-              "DocumentMoniker": "C:\\Users\\daniel.ferreira\\Documents\\Curso CrisTech\\LojaProdutos\\LojaProdutos\\Models\\ProdutosModel.cs",
-              "RelativeDocumentMoniker": "Models\\ProdutosModel.cs",
-              "ToolTip": "C:\\Users\\daniel.ferreira\\Documents\\Curso CrisTech\\LojaProdutos\\LojaProdutos\\Models\\ProdutosModel.cs",
-              "RelativeToolTip": "Models\\ProdutosModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-08T19:44:54.067Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "CategoriaServices.cs",
+              "DocumentMoniker": "C:\\Users\\daniel.ferreira\\Documents\\Curso CrisTech\\LojaProdutos\\LojaProdutos\\Services\\Categorias\\CategoriaServices.cs",
+              "RelativeDocumentMoniker": "Services\\Categorias\\CategoriaServices.cs",
+              "ToolTip": "C:\\Users\\daniel.ferreira\\Documents\\Curso CrisTech\\LojaProdutos\\LojaProdutos\\Services\\Categorias\\CategoriaServices.cs",
+              "RelativeToolTip": "Services\\Categorias\\CategoriaServices.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T20:37:49.915Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ICategoriaInterface.cs",
+              "DocumentMoniker": "C:\\Users\\daniel.ferreira\\Documents\\Curso CrisTech\\LojaProdutos\\LojaProdutos\\Services\\Categorias\\ICategoriaInterface.cs",
+              "RelativeDocumentMoniker": "Services\\Categorias\\ICategoriaInterface.cs",
+              "ToolTip": "C:\\Users\\daniel.ferreira\\Documents\\Curso CrisTech\\LojaProdutos\\LojaProdutos\\Services\\Categorias\\ICategoriaInterface.cs",
+              "RelativeToolTip": "Services\\Categorias\\ICategoriaInterface.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T20:37:24.535Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\daniel.ferreira\\Documents\\Curso CrisTech\\LojaProdutos\\LojaProdutos\\Views\\Produtos\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Produtos\\Index.cshtml",

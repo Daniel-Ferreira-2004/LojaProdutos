@@ -4,6 +4,6 @@ namespace LojaProdutos.Services.Categorias
 {
     public interface ICategoriaInterface
     {
-        Task<List<CategoriaModel>> BuscarCategorias();
+            Task<List<CategoriaModel>> BuscarCategorias();
     }
 }
