@@ -18,7 +18,7 @@ namespace LojaProdutos.DTO.Produto
 
         [Required(ErrorMessage = "Descrição não preenchido")]
         public string Descricao { get; set; }
-        public string Foto { get; set; }
+        public string ?Foto { get; set; }
         public int CategoriaModelId { get; set; }
     }
 }

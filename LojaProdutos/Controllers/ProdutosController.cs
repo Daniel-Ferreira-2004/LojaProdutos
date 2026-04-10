@@ -30,9 +30,18 @@ namespace LojaProdutos.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Cadastrar(CriarProdutoDTO criarProduto, IFormFile foto)
+        public async Task<IActionResult> Cadastrar(CriarProdutoDTO criarProdutoDTO, IFormFile foto)
         {
-            return View();
+            if (ModelState.IsValid)
+            {
+                var produto = await _produtosInterface.Cadastrar(criarProdutoDTO, foto);
+                return RedirectToAction("Index","Produtos");
+            }
+            else
+            {
+                ViewBag.Categorias = await _categoriasInterface.BuscarCategorias();
+                return View(criarProdutoDTO);
+            }
         }
     }
 }

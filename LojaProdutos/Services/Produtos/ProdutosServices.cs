@@ -26,13 +26,27 @@ namespace LojaProdutos.Services.Produtos
             {
                 throw new Exception(ex.Message);
             }
-        }
+        }       
 
-        public async Task<ProdutosModel> Cadastrar(CriarProdutoDTO criarProduto, IFormFile foto)
+        public async Task<ProdutosModel> Cadastrar(CriarProdutoDTO criarProdutoDTO, IFormFile foto)
         {
             try
             {
                 var NomeCaminhoArquivo = GeraCaminhoArquivo(foto);
+                var produto = new ProdutosModel
+                {
+                    Nome = criarProdutoDTO.Nome,
+                    Marca = criarProdutoDTO.Marca,
+                    Valor = criarProdutoDTO.Valor,
+                    QuantidadeEstoque = criarProdutoDTO.QuantidadeEstoque,
+                    Descricao = criarProdutoDTO.Descricao,
+                    Foto = NomeCaminhoArquivo,
+                    CategoriaModelId = criarProdutoDTO.CategoriaModelId
+                };
+
+                _context.Produtos.Add(produto);
+                await _context.SaveChangesAsync();
+                return produto;
             }
             catch (Exception ex)
             {

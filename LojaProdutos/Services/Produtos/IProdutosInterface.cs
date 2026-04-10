@@ -7,6 +7,6 @@ namespace LojaProdutos.Services.Produtos
     public interface IProdutosInterface 
     {
         Task<List<ProdutosModel>> BuscarProdutos();
-        Task<ProdutosModel> Cadastrar(CriarProdutoDTO criarProduto);
+        Task<ProdutosModel> Cadastrar(CriarProdutoDTO criarProdutoDTO, IFormFile foto);
     }
 }
