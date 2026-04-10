@@ -18,6 +18,12 @@
         </div>
 
         <div class="mb-1">
+            <label class="form-label">Marca</label>
+            <input type="text" class="form-control shadow-none" name="marca" asp-for="Marca">
+            <span asp-validation-for="Marca"></span>
+        </div>
+
+        <div class="mb-1">
             <label class="form-label">Preço</label>
             <input type="number" class="form-control shadow-none" min="1" step="any" name="preco" asp-for="Valor">
             <span asp-validation-for="Valor"></span>

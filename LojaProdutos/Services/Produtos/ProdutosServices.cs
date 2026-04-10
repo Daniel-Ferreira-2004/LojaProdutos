@@ -39,7 +39,6 @@ namespace LojaProdutos.Services.Produtos
                     Marca = criarProdutoDTO.Marca,
                     Valor = criarProdutoDTO.Valor,
                     QuantidadeEstoque = criarProdutoDTO.QuantidadeEstoque,
-                    Descricao = criarProdutoDTO.Descricao,
                     Foto = NomeCaminhoArquivo,
                     CategoriaModelId = criarProdutoDTO.CategoriaModelId
                 };
