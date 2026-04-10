@@ -1,5 +1,6 @@
 ﻿using Azure.Messaging;
 using LojaProdutos.Data;
+using LojaProdutos.DTO.Produto;
 using LojaProdutos.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -8,14 +9,16 @@ namespace LojaProdutos.Services.Produtos
 {
     public class ProdutosServices : IProdutosInterface
     {
-        private readonly AppDbContext  _context;
-        public ProdutosServices(AppDbContext context)
+        private readonly AppDbContext _context;
+        private readonly string _sistema;
+        public ProdutosServices(AppDbContext context, IWebHostEnvironment sistema)
         {
             _context = context;
+            _sistema = sistema.WebRootPath;
         }
         public async Task<List<ProdutosModel>> BuscarProdutos()
         {
-            try 
+            try
             {
                 return await _context.Produtos.Include(c => c.Categoria).ToListAsync();
             }
@@ -23,6 +26,36 @@ namespace LojaProdutos.Services.Produtos
             {
                 throw new Exception(ex.Message);
             }
+        }
+
+        public async Task<ProdutosModel> Cadastrar(CriarProdutoDTO criarProduto, IFormFile foto)
+        {
+            try
+            {
+                var NomeCaminhoArquivo = GeraCaminhoArquivo(foto);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+        private string GeraCaminhoArquivo(IFormFile foto)
+        {
+            var codigoUnico = Guid.NewGuid().ToString();
+            var nomeCaminhoImagem = foto.FileName.Replace(" ", "").ToLower() + codigoUnico + ".png";
+
+            var caminhoParaSalvarImagens = _sistema + "\\imagens\\";
+
+            if (!Directory.Exists(caminhoParaSalvarImagens))
+            {
+                Directory.CreateDirectory(caminhoParaSalvarImagens);
+            }
+            using (var stream = File.Create(caminhoParaSalvarImagens + nomeCaminhoImagem))
+            {
+                foto.CopyToAsync(stream);
+            }
+            return caminhoParaSalvarImagens + nomeCaminhoImagem;
         }
     }
 }

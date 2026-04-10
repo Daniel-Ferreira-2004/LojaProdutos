@@ -1,32 +1,40 @@
-﻿
+﻿@using LojaProdutos.DTO.Produto
+@model CriarProdutoDTO
+
 <div class="container mt-5">
-    <form action="/" method="post">
+    <form asp-action="Cadastrar" asp-controller="Produtos" method="post" enctype="multipart/form-data">
         <h2>Cadastrar Produto</h2>
 
         <div class="mb-1">
             <label class="form-label">Foto</label>
-            <input type="file" class="form-control shadow-none" name="foto">
+            <input type="file" class="form-control shadow-none" name="foto" asp-for="Foto">
+            <span asp-validation-for="Foto"></span>
         </div>
 
         <div class="mb-1">
             <label class="form-label">Nome</label>
-            <input type="text" class="form-control shadow-none" name="nome">
+            <input type="text" class="form-control shadow-none" name="nome" asp-for="Nome">
+            <span asp-validation-for="Nome"></span>
         </div>
 
         <div class="mb-1">
             <label class="form-label">Preço</label>
-            <input type="number" class="form-control shadow-none" min="1" step="any" name="preco">
+            <input type="number" class="form-control shadow-none" min="1" step="any" name="preco" asp-for="Valor">
+            <span asp-validation-for="Valor"></span>
         </div>
 
         <div class="mb-1">
             <label class="form-label">Quantidade</label>
-            <input type="number" class="form-control shadow-none" min="1" step="any" name="quantidade">
+            <input type="number" class="form-control shadow-none" min="1" step="any" name="quantidade" asp-for="QuantidadeEstoque">
+            <span asp-validation-for="QuantidadeEstoque"></span>
         </div>
 
         <div class="mb-1">
-            <label class="form-label"></label>
-            <select class="form-select"
-                    asp-items="@(new SelectList(ViewBag.Categorias, "Id", "Nome"))"></select>
+            <label class="form-label">Categoria</label>
+            <select class="form-select" asp-for="CategoriaModelId"
+                    asp-items="@(new SelectList(ViewBag.Categorias, "Id", "Nome"))">
+            </select>
+            <span asp-validation-for="CategoriaModelId"></span>
         </div>
 
         <div class="d-flex mt-3">

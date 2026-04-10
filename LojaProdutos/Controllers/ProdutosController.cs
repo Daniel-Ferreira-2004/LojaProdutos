@@ -1,4 +1,5 @@
-﻿using LojaProdutos.Models;
+﻿using LojaProdutos.DTO.Produto;
+using LojaProdutos.Models;
 using LojaProdutos.Services.Categorias;
 using LojaProdutos.Services.Produtos;
 using Microsoft.AspNetCore.Mvc;
@@ -7,7 +8,7 @@ namespace LojaProdutos.Controllers
 {
     public class ProdutosController : Controller
     {
-        private readonly IProdutosInterface  _produtosInterface;
+        private readonly IProdutosInterface _produtosInterface;
         private readonly ICategoriaInterface _categoriasInterface;
 
         public ProdutosController(IProdutosInterface produtosInterface, ICategoriaInterface categoriasInterface)
@@ -25,6 +26,12 @@ namespace LojaProdutos.Controllers
         {
             var categorias = await _categoriasInterface.BuscarCategorias();
             ViewBag.Categorias = categorias;
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Cadastrar(CriarProdutoDTO criarProduto, IFormFile foto)
+        {
             return View();
         }
     }
