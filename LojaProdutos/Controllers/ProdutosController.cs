@@ -41,6 +41,7 @@ namespace LojaProdutos.Controllers
             {
                 ViewBag.Categorias = await _categoriasInterface.BuscarCategorias();
                 return View(criarProdutoDTO);
+
             }
         }
     }

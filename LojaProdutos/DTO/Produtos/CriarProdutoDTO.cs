@@ -15,8 +15,6 @@ namespace LojaProdutos.DTO.Produto
 
         [Required(ErrorMessage = "Quantidade não preenchido")]
         public int QuantidadeEstoque { get; set; }
-
-        [Required(ErrorMessage = "Descrição não preenchido")]
         public string? Foto { get; set; }
         public int CategoriaModelId { get; set; }
     }

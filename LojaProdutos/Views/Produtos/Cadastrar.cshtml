@@ -7,7 +7,7 @@
 
         <div class="mb-1">
             <label class="form-label">Foto</label>
-            <input type="file" class="form-control shadow-none" name="foto" asp-for="Foto">
+            <input type="file" class="form-control shadow-none" name="foto">
             <span asp-validation-for="Foto"></span>
         </div>
 
@@ -25,13 +25,13 @@
 
         <div class="mb-1">
             <label class="form-label">Preço</label>
-            <input type="number" class="form-control shadow-none" min="1" step="any" name="preco" asp-for="Valor">
+            <input type="number" class="form-control shadow-none" min="1" step="any" name="Valor" asp-for="Valor">
             <span asp-validation-for="Valor"></span>
         </div>
 
         <div class="mb-1">
             <label class="form-label">Quantidade</label>
-            <input type="number" class="form-control shadow-none" min="1" step="any" name="quantidade" asp-for="QuantidadeEstoque">
+            <input type="number" class="form-control shadow-none" min="1" step="any" name="QuantidadeEstoque" asp-for="QuantidadeEstoque">
             <span asp-validation-for="QuantidadeEstoque"></span>
         </div>
 

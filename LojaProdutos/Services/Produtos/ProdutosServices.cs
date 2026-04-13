@@ -4,6 +4,7 @@ using LojaProdutos.DTO.Produto;
 using LojaProdutos.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Threading.Tasks;
 
 namespace LojaProdutos.Services.Produtos
 {
@@ -39,7 +40,7 @@ namespace LojaProdutos.Services.Produtos
                     Marca = criarProdutoDTO.Marca,
                     Valor = criarProdutoDTO.Valor,
                     QuantidadeEstoque = criarProdutoDTO.QuantidadeEstoque,
-                    Foto = NomeCaminhoArquivo,
+                    Foto = await NomeCaminhoArquivo,
                     CategoriaModelId = criarProdutoDTO.CategoriaModelId
                 };
 
@@ -49,11 +50,11 @@ namespace LojaProdutos.Services.Produtos
             }
             catch (Exception ex)
             {
-                throw new Exception(ex.Message);
+                throw new Exception(ex.InnerException?.Message ?? ex.Message);
             }
         }
 
-        private string GeraCaminhoArquivo(IFormFile foto)
+        private async Task<string> GeraCaminhoArquivo(IFormFile foto)
         {
             var codigoUnico = Guid.NewGuid().ToString();
             var nomeCaminhoImagem = foto.FileName.Replace(" ", "").ToLower() + codigoUnico + ".png";
@@ -66,9 +67,9 @@ namespace LojaProdutos.Services.Produtos
             }
             using (var stream = File.Create(caminhoParaSalvarImagens + nomeCaminhoImagem))
             {
-                foto.CopyToAsync(stream);
+                await foto.CopyToAsync(stream);
             }
-            return caminhoParaSalvarImagens + nomeCaminhoImagem;
+            return nomeCaminhoImagem;
         }
     }
 }
