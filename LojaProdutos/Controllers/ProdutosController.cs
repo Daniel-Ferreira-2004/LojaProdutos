@@ -64,5 +64,19 @@ namespace LojaProdutos.Controllers
 
             }
         }
-    }
+
+        [HttpPost]
+        public async Task<IActionResult> Editar(EditarProdutoDTO editarProdutoDTO, IFormFile foto)
+        {
+            if (!ModelState.IsValid)
+            {
+                var produto = await _produtosInterface.Editar(editarProdutoDTO, foto);
+                return RedirectToAction("Index", "Produtos");
+            }else
+            {
+                ViewBag.Categorias = await _categoriasInterface.BuscarCategorias();
+                return View(editarProdutoDTO);
+
+            }
+        }
 }

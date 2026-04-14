@@ -4,7 +4,7 @@ namespace LojaProdutos.DTO.Produtos
 {
     public class EditarProdutoDTO
     {
-        public string Id { get; set; }
+        public int Id { get; set; }
 
         [Required(ErrorMessage = "Nome não preenchido")]
         public string Nome { get; set; }

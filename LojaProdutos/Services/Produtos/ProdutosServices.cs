@@ -1,6 +1,7 @@
 ﻿using Azure.Messaging;
 using LojaProdutos.Data;
 using LojaProdutos.DTO.Produto;
+using LojaProdutos.DTO.Produtos;
 using LojaProdutos.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -47,6 +48,46 @@ namespace LojaProdutos.Services.Produtos
                 _context.Produtos.Add(produto);
                 await _context.SaveChangesAsync();
                 return produto;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.InnerException?.Message ?? ex.Message);
+            }
+        }
+
+        public async Task<ProdutosModel> Editar(EditarProdutoDTO editarProdutoDTO, IFormFile? foto)
+        {
+
+            try
+            {
+                var produto = await GetProdutosId(editarProdutoDTO.Id);
+
+                var nomeCaminhoImagem = "";
+                if (nomeCaminhoImagem != null)
+                {
+                    string CaminhoCapaExistente = _sistema + "\\imagens\\" + produto.Foto;
+                    if (File.Exists(CaminhoCapaExistente))
+                    {
+                        File.Delete(CaminhoCapaExistente);
+                    }
+
+                    nomeCaminhoImagem = GeraCaminhoArquivo(foto);
+                }
+
+                produto.Nome = editarProdutoDTO.Nome;
+                produto.Valor = editarProdutoDTO.Valor;
+                produto.Marca = editarProdutoDTO.Marca;
+                produto.QuantidadeEstoque = editarProdutoDTO.QuantidadeEstoque;
+                produto.CategoriaModelId = editarProdutoDTO.CategoriaModelId;
+
+                if (nomeCaminhoImagem != "")
+                {
+                    produto.Foto = nomeCaminhoImagem;
+                }
+
+                _context.Update(produto);
+                await _context.SaveChangesAsync();
+
             }
             catch (Exception ex)
             {
