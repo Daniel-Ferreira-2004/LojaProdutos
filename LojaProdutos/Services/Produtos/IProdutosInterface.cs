@@ -8,5 +8,6 @@ namespace LojaProdutos.Services.Produtos
     {
         Task<List<ProdutosModel>> BuscarProdutos();
         Task<ProdutosModel> Cadastrar(CriarProdutoDTO criarProdutoDTO, IFormFile foto);
+        Task<ProdutosModel> GetProdutosId(int id);
     }
 }

@@ -27,7 +27,7 @@ namespace LojaProdutos.Services.Produtos
             {
                 throw new Exception(ex.Message);
             }
-        }       
+        }
 
         public async Task<ProdutosModel> Cadastrar(CriarProdutoDTO criarProdutoDTO, IFormFile foto)
         {
@@ -51,6 +51,21 @@ namespace LojaProdutos.Services.Produtos
             catch (Exception ex)
             {
                 throw new Exception(ex.InnerException?.Message ?? ex.Message);
+            }
+        }
+
+        public async Task<ProdutosModel> GetProdutosId(int id)
+        {
+            try
+            {
+                var produto = await _context.Produtos
+                                            .Include(c => c.Categoria)
+                                            .FirstOrDefaultAsync(p => p.Id == id);
+                return produto;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
             }
         }
 

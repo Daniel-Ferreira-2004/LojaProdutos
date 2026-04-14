@@ -40,7 +40,7 @@
                             <td>R$ @produto.Valor.ToString("F")</td>
 
                             <td>
-                                <a class="btn btn-success">Editar</a>
+                                <a class="btn btn-success" asp-action="Editar" asp-controller="Produtos" asp-route-id="@produto.Id">Editar</a>
                                 <a class="btn btn-danger">Excluir</a>
                             </td>
                         </tr>

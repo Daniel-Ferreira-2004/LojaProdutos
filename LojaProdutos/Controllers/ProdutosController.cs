@@ -1,4 +1,5 @@
 ﻿using LojaProdutos.DTO.Produto;
+using LojaProdutos.DTO.Produtos;
 using LojaProdutos.Models;
 using LojaProdutos.Services.Categorias;
 using LojaProdutos.Services.Produtos;
@@ -29,17 +30,36 @@ namespace LojaProdutos.Controllers
             return View();
         }
 
+        public async Task<IActionResult> Editar(int id)
+        {
+            var produtos = await _produtosInterface.GetProdutosId(id);
+
+            var editarProdutoDTO = new EditarProdutoDTO
+            {
+                Nome = produtos.Nome,
+                Marca = produtos.Marca,
+                Valor = produtos.Valor,
+                QuantidadeEstoque = produtos.QuantidadeEstoque,
+                Foto = produtos.Foto,
+                CategoriaModelId = produtos.CategoriaModelId,
+
+            };
+            ViewBag.Categorias = await _categoriasInterface.BuscarCategorias();
+
+            return View(editarProdutoDTO);
+
+        }
+
         [HttpPost]
         public async Task<IActionResult> Cadastrar(CriarProdutoDTO criarProdutoDTO, IFormFile foto)
         {
             if (ModelState.IsValid)
             {
                 var produto = await _produtosInterface.Cadastrar(criarProdutoDTO, foto);
-                return RedirectToAction("Index","Produtos");
+                return RedirectToAction("Index", "Produtos");
             }
             else
             {
-                ViewBag.Categorias = await _categoriasInterface.BuscarCategorias();
                 return View(criarProdutoDTO);
 
             }

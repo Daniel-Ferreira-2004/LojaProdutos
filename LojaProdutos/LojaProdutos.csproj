@@ -7,6 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\imagens\lokinho.jpg11a45b3e-b0f4-4218-994b-4bb8fd66ffe5.png" />
+    <Content Remove="wwwroot\imagens\lokinho.jpg297b3fae-86e8-445b-a23b-93c458a9af98.png" />
+    <Content Remove="wwwroot\imagens\lokinho.jpg826442b7-b009-44d1-9de4-f18bdcd099b2.png" />
+    <Content Remove="wwwroot\imagens\lokinho.jpg953fa92e-ac47-4fd2-b43c-46a64d2c6800.png" />
+    <Content Remove="wwwroot\imagens\lokinho.jpgef55d7f3-e69f-49fa-9095-ac0561a61765.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.14" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.14">
       <PrivateAssets>all</PrivateAssets>
