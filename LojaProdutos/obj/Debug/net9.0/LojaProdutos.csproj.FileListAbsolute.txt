@@ -465,4 +465,4 @@ C:\Users\Daniel\Documents\GitHub\LojaProdutos\LojaProdutos\obj\Debug\net9.0\refi
 C:\Users\Daniel\Documents\GitHub\LojaProdutos\LojaProdutos\obj\Debug\net9.0\LojaProdutos.pdb
 C:\Users\Daniel\Documents\GitHub\LojaProdutos\LojaProdutos\obj\Debug\net9.0\LojaProdutos.genruntimeconfig.cache
 C:\Users\Daniel\Documents\GitHub\LojaProdutos\LojaProdutos\obj\Debug\net9.0\ref\LojaProdutos.dll
-C:\Users\daniel.ferreira\Documents\Curso CrisTech\LojaProdutos\LojaProdutos\obj\Debug\net9.0\compressed\7tgrl6pcqp-m41exilejy.gz
+C:\Users\daniel.ferreira\Documents\Curso CrisTech\LojaProdutos\LojaProdutos\obj\Debug\net9.0\compressed\7tgrl6pcqp-sjqkdj7nwp.gz
