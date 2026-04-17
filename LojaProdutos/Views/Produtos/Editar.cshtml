@@ -1,6 +1,20 @@
 ﻿@using LojaProdutos.DTO.Produtos
 @model EditarProdutoDTO
 
+@if (TempData["Sucesso"] != null)
+{
+    <div class="alert alert-success" role="alert">
+        @TempData["Sucesso"]
+    </div>
+}
+
+@if (TempData["Erro"] != null)
+{
+    <div class="alert alert-danger" role="alert">
+        @TempData["Erro"]
+    </div>
+}
+
 <div class="container mt-5">
     <form asp-action="Editar" asp-controller="Produtos" method="post" enctype="multipart/form-data">
         <h2>Editar Produto | @Model.Nome</h2>
