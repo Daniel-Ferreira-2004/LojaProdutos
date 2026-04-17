@@ -30,6 +30,22 @@ namespace LojaProdutos.Services.Produtos
             }
         }
 
+        public Task<List<ProdutosModel>> BuscarProdutosFiltro(string pesquisar)
+        {
+            try
+            {
+                var produtos = _context.Produtos
+                                        .Include(c => c.Categoria)
+                                        .Where(p => p.Nome.Contains(pesquisar) || p.Marca.Contains(pesquisar))
+                                        .ToListAsync();
+                return produtos;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
         public async Task<ProdutosModel> Cadastrar(CriarProdutoDTO criarProdutoDTO, IFormFile foto)
         {
             try
