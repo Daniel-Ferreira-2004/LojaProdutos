@@ -12,7 +12,7 @@ namespace LojaProdutos.Models
         public decimal Valor { get; set; }
         public int QuantidadeEstoque { get; set; }
         public string? Descricao { get; set; }
-        public string Foto { get; set; }
+        public string? Foto { get; set; }
         public int CategoriaModelId { get; set; }
 
         [ValidateNever]

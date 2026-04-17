@@ -50,6 +50,19 @@ namespace LojaProdutos.Controllers
 
         }
 
+        public async Task<IActionResult> Remover(int id)
+        {
+            try
+            {
+                var produto = await _produtosInterface.Remover(id);
+                return RedirectToAction("Index", "Produtos");
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.InnerException?.Message ?? ex.Message);
+            }
+        }
+
         [HttpPost]
         public async Task<IActionResult> Cadastrar(CriarProdutoDTO criarProdutoDTO, IFormFile foto)
         {
@@ -60,6 +73,7 @@ namespace LojaProdutos.Controllers
             }
             else
             {
+                ViewBag.Categorias = await _categoriasInterface.BuscarCategorias();
                 return View(criarProdutoDTO);
 
             }
@@ -72,11 +86,13 @@ namespace LojaProdutos.Controllers
             {
                 var produto = await _produtosInterface.Editar(editarProdutoDTO, foto);
                 return RedirectToAction("Index", "Produtos");
-            }else
+            }
+            else
             {
                 ViewBag.Categorias = await _categoriasInterface.BuscarCategorias();
                 return View(editarProdutoDTO);
 
             }
         }
+    }
 }

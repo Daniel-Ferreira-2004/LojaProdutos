@@ -41,7 +41,7 @@
 
                             <td>
                                 <a class="btn btn-success" asp-action="Editar" asp-controller="Produtos" asp-route-id="@produto.Id">Editar</a>
-                                <a class="btn btn-danger">Excluir</a>
+                                <a class="btn btn-danger" asp-action="Remover" asp-controller="Produtos" asp-route-id="@produto.Id">Excluir</a>
                             </td>
                         </tr>
                     }

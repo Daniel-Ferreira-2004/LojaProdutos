@@ -41,7 +41,7 @@ namespace LojaProdutos.Services.Produtos
                     Marca = criarProdutoDTO.Marca,
                     Valor = criarProdutoDTO.Valor,
                     QuantidadeEstoque = criarProdutoDTO.QuantidadeEstoque,
-                    Foto = await NomeCaminhoArquivo,
+                    Foto = NomeCaminhoArquivo,
                     CategoriaModelId = criarProdutoDTO.CategoriaModelId
                 };
 
@@ -63,7 +63,7 @@ namespace LojaProdutos.Services.Produtos
                 var produto = await GetProdutosId(editarProdutoDTO.Id);
 
                 var nomeCaminhoImagem = "";
-                if (nomeCaminhoImagem != null)
+                if (foto != null)
                 {
                     string CaminhoCapaExistente = _sistema + "\\imagens\\" + produto.Foto;
                     if (File.Exists(CaminhoCapaExistente))
@@ -87,6 +87,7 @@ namespace LojaProdutos.Services.Produtos
 
                 _context.Update(produto);
                 await _context.SaveChangesAsync();
+                return produto;
 
             }
             catch (Exception ex)
@@ -110,7 +111,22 @@ namespace LojaProdutos.Services.Produtos
             }
         }
 
-        private async Task<string> GeraCaminhoArquivo(IFormFile foto)
+        public async Task<ProdutosModel> Remover(int id)
+        {
+            try
+            {
+                var produto = await GetProdutosId(id);
+                _context.Produtos.Remove(produto);
+                await _context.SaveChangesAsync();
+                return produto;
+            }
+            catch ( Exception ex)
+            {
+                throw new Exception(ex.InnerException?.Message ?? ex.Message);
+            }
+        }
+
+        private string GeraCaminhoArquivo(IFormFile foto)
         {
             var codigoUnico = Guid.NewGuid().ToString();
             var nomeCaminhoImagem = foto.FileName.Replace(" ", "").ToLower() + codigoUnico + ".png";
@@ -123,7 +139,7 @@ namespace LojaProdutos.Services.Produtos
             }
             using (var stream = File.Create(caminhoParaSalvarImagens + nomeCaminhoImagem))
             {
-                await foto.CopyToAsync(stream);
+                 foto.CopyToAsync(stream).Wait();
             }
             return nomeCaminhoImagem;
         }
