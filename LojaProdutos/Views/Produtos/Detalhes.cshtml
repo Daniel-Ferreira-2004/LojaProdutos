@@ -1,0 +1,22 @@
+﻿@using LojaProdutos.Models
+@model ProdutosModel
+
+<div class="container my-5">
+    <div class="row">
+        <div class="col-md-6">
+            <img src="~/imagens/@Model.Foto" style="height:15em; width:50%" alt="@Model.Nome">
+        </div>
+        <div class="col-md-6">
+            <h2>@Model.Nome</h2>
+            <p><strong>Marca:</strong> @Model.Marca</p>
+            <p><strong>Preço:</strong> R$ @Model.Valor.ToString("F")</p>
+            <p><strong>Quantidade em estoque:</strong> @Model.QuantidadeEstoque</p>
+            <p><strong>Categoria:</strong> @Model.CategoriaModelId</p>
+
+            <form method="post" asp-action="BaixarEstoque" asp-controller="Estoque" asp-route-id="@Model.Id">
+                <button type="submit" class="btn btn-warning w-50">Comprar</button>
+            </form>
+            <a asp-action="Index" asp-controller="Home" class="btn btn-info w-50 mt-2">Voltar</a>
+        </div>
+    </div>
+</div>

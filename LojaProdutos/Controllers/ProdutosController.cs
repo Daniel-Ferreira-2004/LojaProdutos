@@ -63,6 +63,12 @@ namespace LojaProdutos.Controllers
             }
         }
 
+        public async Task<IActionResult> Detalhes(int id)
+        {
+            var produto = await _produtosInterface.GetProdutosId(id);
+            return View(produto);
+        }
+
         [HttpPost]
         public async Task<IActionResult> Cadastrar(CriarProdutoDTO criarProdutoDTO, IFormFile foto)
         {

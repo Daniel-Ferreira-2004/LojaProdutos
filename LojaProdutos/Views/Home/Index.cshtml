@@ -19,11 +19,13 @@
                     <div class="card" style="width:15rem; margin-left: 20px; margin-bottom:20px">
 
                         <h5 class="card-title position-absolute" style="background-color: rgba(0, 0, 0, 1); color: white; padding: 5px;">@produto.Nome</h5>
-                        <img src="~/imagens/@produto.Foto" class="card-img-top" alt="@produto.Nome">
+                        <img src="~/imagens/@produto.Foto" class="card-img-top" alt="@produto.Nome" style="height:10em; width:100%">
                         <div class="card-body">
                             <h5 class="card-title">@produto.Nome</h5>
                             <p class="card-text">@produto.Marca</p>
                             <p class="card-text">R$ @produto.Valor.ToString("F")</p>
+
+                            <a class="btn btn-primary" asp-action="Detalhes" asp-controller="Produtos" asp-route-id="@produto.Id">Detalhes</a>
                         </div>
                     </div>
                 }
