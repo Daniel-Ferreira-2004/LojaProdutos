@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\daniel.ferreira\\Documents\\Curso CrisTech\\LojaProdutos\\LojaProdutos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F5B47162-6706-4376-8CB0-BAFF0572BCCE}|LojaProdutos.csproj|c:\\users\\daniel.ferreira\\documents\\curso cristech\\lojaprodutos\\lojaprodutos\\controllers\\estoquecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F5B47162-6706-4376-8CB0-BAFF0572BCCE}|LojaProdutos.csproj|solutionrelative:controllers\\estoquecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F5B47162-6706-4376-8CB0-BAFF0572BCCE}|LojaProdutos.csproj|c:\\users\\daniel.ferreira\\documents\\curso cristech\\lojaprodutos\\lojaprodutos\\services\\estoque\\estoqueservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F5B47162-6706-4376-8CB0-BAFF0572BCCE}|LojaProdutos.csproj|solutionrelative:services\\estoque\\estoqueservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5B47162-6706-4376-8CB0-BAFF0572BCCE}|LojaProdutos.csproj|c:\\users\\daniel.ferreira\\documents\\curso cristech\\lojaprodutos\\lojaprodutos\\controllers\\estoquecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5B47162-6706-4376-8CB0-BAFF0572BCCE}|LojaProdutos.csproj|solutionrelative:controllers\\estoquecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F5B47162-6706-4376-8CB0-BAFF0572BCCE}|LojaProdutos.csproj|c:\\users\\daniel.ferreira\\documents\\curso cristech\\lojaprodutos\\lojaprodutos\\services\\estoque\\iestoqueinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -48,14 +48,14 @@
               "RelativeDocumentMoniker": "Services\\Estoque\\IEstoqueInterface.cs",
               "ToolTip": "C:\\Users\\daniel.ferreira\\Documents\\Curso CrisTech\\LojaProdutos\\LojaProdutos\\Services\\Estoque\\IEstoqueInterface.cs",
               "RelativeToolTip": "Services\\Estoque\\IEstoqueInterface.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-22T19:49:34.793Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "EstoqueController.cs",
               "DocumentMoniker": "C:\\Users\\daniel.ferreira\\Documents\\Curso CrisTech\\LojaProdutos\\LojaProdutos\\Controllers\\EstoqueController.cs",
               "RelativeDocumentMoniker": "Controllers\\EstoqueController.cs",
@@ -68,13 +68,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "EstoqueService.cs",
               "DocumentMoniker": "C:\\Users\\daniel.ferreira\\Documents\\Curso CrisTech\\LojaProdutos\\LojaProdutos\\Services\\Estoque\\EstoqueService.cs",
               "RelativeDocumentMoniker": "Services\\Estoque\\EstoqueService.cs",
               "ToolTip": "C:\\Users\\daniel.ferreira\\Documents\\Curso CrisTech\\LojaProdutos\\LojaProdutos\\Services\\Estoque\\EstoqueService.cs",
               "RelativeToolTip": "Services\\Estoque\\EstoqueService.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAqwB4AAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAEwAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-22T19:41:55.118Z",
               "EditorCaption": ""

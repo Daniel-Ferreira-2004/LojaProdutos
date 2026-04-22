@@ -1,6 +1,7 @@
 ﻿using LojaProdutos.Data;
 using LojaProdutos.Models;
 using LojaProdutos.Services.Produtos;
+using Microsoft.EntityFrameworkCore;
 
 namespace LojaProdutos.Services.Estoque
 {
@@ -44,5 +45,40 @@ namespace LojaProdutos.Services.Estoque
         {
             produtos.QuantidadeEstoque--;
         }
+
+        public List<RegistroProdutosModel> ListagemRegistro()
+        {
+            try
+            {
+                var resultado = from c in _context.Estoques.Include(x => x.ProdutosModel)
+                                                            .Include(y => y.ProdutosModel.Categoria)
+                                                            .ToList()
+                                group c by new { c.ProdutosModel.CategoriaModelId, c.DataBaixa } into total
+                                select new
+                                {
+                                    ProdutoId = total.First().ProdutosModel.Categoria.Id,
+                                    CategoriaNome = total.First().ProdutosModel.Categoria.Nome,
+                                    DataCompra = total.First().DataBaixa,
+                                    Total = total.Sum(c => c.ProdutosModel.Valor)
+                                };
+                var totalGeral = _context.ProdutosBaixados.Include(x => x.ProdutosModel)
+                                                        .Include(y => y.ProdutosModel.Categoria)
+                                                        .Sum(c => c.ProdutosModel.Valor);
+
+                List<RegistroProdutosModel> registros = resultado.Select(r => new RegistroProdutosModel
+                {
+                    ProdutoId = r.ProdutoId,
+                    CategoriaNome = r.CategoriaNome,
+                    DataCompra = r.DataCompra,
+                    Total = r.Total,
+                    TotalGeral = totalGeral
+                }).ToList();
+
+                return registros;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Erro ao listar registros de estoque: {ex.Message}");
+            }
     }
 }
