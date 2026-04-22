@@ -224,7 +224,6 @@ C:\Users\daniel.ferreira\Documents\Curso CrisTech\LojaProdutos\LojaProdutos\obj\
 C:\Users\daniel.ferreira\Documents\Curso CrisTech\LojaProdutos\LojaProdutos\obj\Debug\net9.0\staticwebassets.build.json.cache
 C:\Users\daniel.ferreira\Documents\Curso CrisTech\LojaProdutos\LojaProdutos\obj\Debug\net9.0\staticwebassets.development.json
 C:\Users\daniel.ferreira\Documents\Curso CrisTech\LojaProdutos\LojaProdutos\obj\Debug\net9.0\staticwebassets.build.endpoints.json
-C:\Users\daniel.ferreira\Documents\Curso CrisTech\LojaProdutos\LojaProdutos\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 C:\Users\daniel.ferreira\Documents\Curso CrisTech\LojaProdutos\LojaProdutos\obj\Debug\net9.0\LojaProd.8CFAE4DD.Up2Date
 C:\Users\daniel.ferreira\Documents\Curso CrisTech\LojaProdutos\LojaProdutos\obj\Debug\net9.0\LojaProdutos.dll
 C:\Users\daniel.ferreira\Documents\Curso CrisTech\LojaProdutos\LojaProdutos\obj\Debug\net9.0\refint\LojaProdutos.dll
@@ -466,3 +465,4 @@ C:\Users\Daniel\Documents\GitHub\LojaProdutos\LojaProdutos\obj\Debug\net9.0\Loja
 C:\Users\Daniel\Documents\GitHub\LojaProdutos\LojaProdutos\obj\Debug\net9.0\LojaProdutos.genruntimeconfig.cache
 C:\Users\Daniel\Documents\GitHub\LojaProdutos\LojaProdutos\obj\Debug\net9.0\ref\LojaProdutos.dll
 C:\Users\daniel.ferreira\Documents\Curso CrisTech\LojaProdutos\LojaProdutos\obj\Debug\net9.0\compressed\7tgrl6pcqp-sjqkdj7nwp.gz
+C:\Users\daniel.ferreira\Documents\Curso CrisTech\LojaProdutos\LojaProdutos\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt

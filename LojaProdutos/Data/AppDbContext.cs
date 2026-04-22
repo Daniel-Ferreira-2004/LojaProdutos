@@ -10,5 +10,6 @@ namespace LojaProdutos.Data
         }
         public DbSet<CategoriaModel> Categorias { get; set; }
         public DbSet<ProdutosModel> Produtos { get; set; }
+        public DbSet<EstoqueModel> Estoques { get; set; }
     }
 }

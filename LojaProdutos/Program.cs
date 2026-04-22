@@ -1,5 +1,6 @@
 using LojaProdutos.Data;
 using LojaProdutos.Services.Categorias;
+using LojaProdutos.Services.Estoque;
 using LojaProdutos.Services.Produtos;
 using Microsoft.EntityFrameworkCore;
 
@@ -15,6 +16,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 builder.Services.AddScoped<IProdutosInterface, ProdutosServices>();
 builder.Services.AddScoped<ICategoriaInterface, CategoriaServices>();
+builder.Services.AddScoped<IEstoqueInterface, EstoqueService>();
 
 var app = builder.Build();
 

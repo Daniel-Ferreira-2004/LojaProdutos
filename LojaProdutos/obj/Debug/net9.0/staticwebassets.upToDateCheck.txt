@@ -1,8 +1,5 @@
 wwwroot\css\site.css
 wwwroot\favicon.ico
-wwwroot\imagens\amor.pngae5c2cb0-1f8a-4892-af5d-b5ee88ea097b.png
-wwwroot\imagens\fotoperfillinkeedin.png2cbcf98b-6c1e-43eb-b076-059be29429f7.png
-wwwroot\imagens\minhafoto.jpga4c0d9cd-b5a9-4564-ab37-31f05cca3b5b.png
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
@@ -64,6 +61,9 @@ wwwroot\lib\jquery\dist\jquery.slim.js
 wwwroot\lib\jquery\dist\jquery.slim.min.js
 wwwroot\lib\jquery\dist\jquery.slim.min.map
 wwwroot\lib\jquery\LICENSE.txt
+wwwroot\imagens\minhafoto.jpga4c0d9cd-b5a9-4564-ab37-31f05cca3b5b.png
+wwwroot\imagens\amor.pngae5c2cb0-1f8a-4892-af5d-b5ee88ea097b.png
+wwwroot\imagens\fotoperfillinkeedin.png2cbcf98b-6c1e-43eb-b076-059be29429f7.png
 C:\Users\daniel.ferreira\Documents\Curso CrisTech\LojaProdutos\LojaProdutos\wwwroot\css\site.css
 C:\Users\daniel.ferreira\Documents\Curso CrisTech\LojaProdutos\LojaProdutos\wwwroot\favicon.ico
 C:\Users\daniel.ferreira\Documents\Curso CrisTech\LojaProdutos\LojaProdutos\wwwroot\js\site.js
