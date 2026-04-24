@@ -2,6 +2,7 @@
 using LojaProdutos.Models;
 using LojaProdutos.Services.Produtos;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Win32;
 
 namespace LojaProdutos.Services.Estoque
 {
@@ -23,11 +24,10 @@ namespace LojaProdutos.Services.Estoque
                 var registro = new EstoqueModel
                 {
                     ProdutoModelId = produto.Id,
-                    ProdutosModel = produto
+                    Produtos = produto
                 };
 
                 _context.Add(registro);
-                await _context.SaveChangesAsync();
 
                 BaixarEstoque(produto);
                 _context.Update(produto);
@@ -43,6 +43,9 @@ namespace LojaProdutos.Services.Estoque
 
         public void BaixarEstoque(ProdutosModel produtos)
         {
+            if (produtos.QuantidadeEstoque <= 0)
+                throw new Exception("Estoque insuficiente para realizar a operação.");
+
             produtos.QuantidadeEstoque--;
         }
 
@@ -50,35 +53,42 @@ namespace LojaProdutos.Services.Estoque
         {
             try
             {
-                var resultado = from c in _context.Estoques.Include(x => x.ProdutosModel)
-                                                            .Include(y => y.ProdutosModel.Categoria)
-                                                            .ToList()
-                                group c by new { c.ProdutosModel.CategoriaModelId, c.DataBaixa } into total
+                var resultado = from c in _context.Estoques
+                                .Include(x => x.Produtos)
+                                .Include(y => y.Produtos.Categoria)
+                                .ToList()
+                                group c by new { c.Produtos.CategoriaModelId, c.DataBaixa } into total
                                 select new
                                 {
-                                    ProdutoId = total.First().ProdutosModel.Categoria.Id,
-                                    CategoriaNome = total.First().ProdutosModel.Categoria.Nome,
-                                    DataCompra = total.First().DataBaixa,
-                                    Total = total.Sum(c => c.ProdutosModel.Valor)
+                                    ProdutoId = total.First().Produtos.Categoria.Id,
+                                    CategoriaNome = total.First().Produtos.Categoria.Nome,
+                                    DataCompra = total.First().DataBaixa,   
+                                    Total = total.Sum(c => c.Produtos.Valor)
                                 };
-                var totalGeral = _context.ProdutosBaixados.Include(x => x.ProdutosModel)
-                                                        .Include(y => y.ProdutosModel.Categoria)
-                                                        .Sum(c => c.ProdutosModel.Valor);
+                var totalGeral = _context.Estoques.Include(x => x.Produtos)
+                                                  .Include(y => y.Produtos.Categoria)
+                                                  .Sum(c => c.Produtos.Valor);
 
-                List<RegistroProdutosModel> registros = resultado.Select(r => new RegistroProdutosModel
+                List<RegistroProdutosModel> Lista = new List<RegistroProdutosModel>();
+
+                foreach (var result in resultado)
                 {
-                    ProdutoId = r.ProdutoId,
-                    CategoriaNome = r.CategoriaNome,
-                    DataCompra = r.DataCompra,
-                    Total = r.Total,
-                    TotalGeral = totalGeral
-                }).ToList();
+                    var registro = new RegistroProdutosModel()
+                    {
+                        ProdutoId = result.ProdutoId,
+                        CategoriaNome = result.CategoriaNome,
+                        DataCompra = result.DataCompra,
+                        Total = result.Total,
+                        TotalGeral = totalGeral
+                    };
 
-                return registros;
+                    Lista.Add(registro);
+                }
+                return Lista;
             }
             catch (Exception ex)
             {
                 throw new Exception($"Erro ao listar registros de estoque: {ex.Message}");
             }
+        }
     }
-}

@@ -7,7 +7,7 @@ namespace LojaProdutos.Models
         public int Id { get; set; }
         public int ProdutoModelId { get; set; }
         [ValidateNever]
-        public ProdutosModel ProdutosModel { get; set; }
+        public ProdutosModel Produtos { get; set; }
         public DateTime DataBaixa { get; set; } = DateTime.Now;
     }
 }

@@ -1,18 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\daniel.ferreira\\Documents\\Curso CrisTech\\LojaProdutos\\LojaProdutos\\",
+  "WorkspaceRootPath": "C:\\Users\\Daniel\\Documents\\GitHub\\LojaProdutos\\LojaProdutos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F5B47162-6706-4376-8CB0-BAFF0572BCCE}|LojaProdutos.csproj|c:\\users\\daniel.ferreira\\documents\\curso cristech\\lojaprodutos\\lojaprodutos\\services\\estoque\\estoqueservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F5B47162-6706-4376-8CB0-BAFF0572BCCE}|LojaProdutos.csproj|solutionrelative:services\\estoque\\estoqueservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F5B47162-6706-4376-8CB0-BAFF0572BCCE}|LojaProdutos.csproj|c:\\users\\daniel\\documents\\github\\lojaprodutos\\lojaprodutos\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F5B47162-6706-4376-8CB0-BAFF0572BCCE}|LojaProdutos.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F5B47162-6706-4376-8CB0-BAFF0572BCCE}|LojaProdutos.csproj|c:\\users\\daniel.ferreira\\documents\\curso cristech\\lojaprodutos\\lojaprodutos\\controllers\\estoquecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F5B47162-6706-4376-8CB0-BAFF0572BCCE}|LojaProdutos.csproj|c:\\users\\daniel\\documents\\github\\lojaprodutos\\lojaprodutos\\controllers\\estoquecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F5B47162-6706-4376-8CB0-BAFF0572BCCE}|LojaProdutos.csproj|solutionrelative:controllers\\estoquecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F5B47162-6706-4376-8CB0-BAFF0572BCCE}|LojaProdutos.csproj|c:\\users\\daniel.ferreira\\documents\\curso cristech\\lojaprodutos\\lojaprodutos\\services\\estoque\\iestoqueinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F5B47162-6706-4376-8CB0-BAFF0572BCCE}|LojaProdutos.csproj|solutionrelative:services\\estoque\\iestoqueinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F5B47162-6706-4376-8CB0-BAFF0572BCCE}|LojaProdutos.csproj|c:\\users\\daniel\\documents\\github\\lojaprodutos\\lojaprodutos\\services\\estoque\\estoqueservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5B47162-6706-4376-8CB0-BAFF0572BCCE}|LojaProdutos.csproj|solutionrelative:services\\estoque\\estoqueservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,8 +22,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Daniel\\Documents\\GitHub\\LojaProdutos\\LojaProdutos\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Daniel\\Documents\\GitHub\\LojaProdutos\\LojaProdutos\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAB6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-24T00:29:29.169Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EstoqueController.cs",
+              "DocumentMoniker": "C:\\Users\\Daniel\\Documents\\GitHub\\LojaProdutos\\LojaProdutos\\Controllers\\EstoqueController.cs",
+              "RelativeDocumentMoniker": "Controllers\\EstoqueController.cs",
+              "ToolTip": "C:\\Users\\Daniel\\Documents\\GitHub\\LojaProdutos\\LojaProdutos\\Controllers\\EstoqueController.cs",
+              "RelativeToolTip": "Controllers\\EstoqueController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-24T00:27:53.974Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
@@ -43,38 +69,12 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "IEstoqueInterface.cs",
-              "DocumentMoniker": "C:\\Users\\daniel.ferreira\\Documents\\Curso CrisTech\\LojaProdutos\\LojaProdutos\\Services\\Estoque\\IEstoqueInterface.cs",
-              "RelativeDocumentMoniker": "Services\\Estoque\\IEstoqueInterface.cs",
-              "ToolTip": "C:\\Users\\daniel.ferreira\\Documents\\Curso CrisTech\\LojaProdutos\\LojaProdutos\\Services\\Estoque\\IEstoqueInterface.cs",
-              "RelativeToolTip": "Services\\Estoque\\IEstoqueInterface.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-22T19:49:34.793Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "EstoqueController.cs",
-              "DocumentMoniker": "C:\\Users\\daniel.ferreira\\Documents\\Curso CrisTech\\LojaProdutos\\LojaProdutos\\Controllers\\EstoqueController.cs",
-              "RelativeDocumentMoniker": "Controllers\\EstoqueController.cs",
-              "ToolTip": "C:\\Users\\daniel.ferreira\\Documents\\Curso CrisTech\\LojaProdutos\\LojaProdutos\\Controllers\\EstoqueController.cs",
-              "RelativeToolTip": "Controllers\\EstoqueController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-22T19:44:59.74Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "EstoqueService.cs",
-              "DocumentMoniker": "C:\\Users\\daniel.ferreira\\Documents\\Curso CrisTech\\LojaProdutos\\LojaProdutos\\Services\\Estoque\\EstoqueService.cs",
+              "DocumentMoniker": "C:\\Users\\Daniel\\Documents\\GitHub\\LojaProdutos\\LojaProdutos\\Services\\Estoque\\EstoqueService.cs",
               "RelativeDocumentMoniker": "Services\\Estoque\\EstoqueService.cs",
-              "ToolTip": "C:\\Users\\daniel.ferreira\\Documents\\Curso CrisTech\\LojaProdutos\\LojaProdutos\\Services\\Estoque\\EstoqueService.cs",
+              "ToolTip": "C:\\Users\\Daniel\\Documents\\GitHub\\LojaProdutos\\LojaProdutos\\Services\\Estoque\\EstoqueService.cs",
               "RelativeToolTip": "Services\\Estoque\\EstoqueService.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAEwAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAADsAAAAAAAAAAAAcwE4AAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-22T19:41:55.118Z",
               "EditorCaption": ""
