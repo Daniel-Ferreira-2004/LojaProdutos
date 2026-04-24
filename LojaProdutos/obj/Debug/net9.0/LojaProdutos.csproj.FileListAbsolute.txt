@@ -391,7 +391,6 @@ C:\Users\Daniel\Documents\GitHub\LojaProdutos\LojaProdutos\obj\Debug\net9.0\scop
 C:\Users\Daniel\Documents\GitHub\LojaProdutos\LojaProdutos\obj\Debug\net9.0\scopedcss\projectbundle\LojaProdutos.bundle.scp.css
 C:\Users\Daniel\Documents\GitHub\LojaProdutos\LojaProdutos\obj\Debug\net9.0\compressed\d5pjct93jm-b9sayid5wm.gz
 C:\Users\Daniel\Documents\GitHub\LojaProdutos\LojaProdutos\obj\Debug\net9.0\compressed\ol15ssiaa5-61n19gt1b8.gz
-C:\Users\Daniel\Documents\GitHub\LojaProdutos\LojaProdutos\obj\Debug\net9.0\compressed\7tgrl6pcqp-xtxxf3hu2r.gz
 C:\Users\Daniel\Documents\GitHub\LojaProdutos\LojaProdutos\obj\Debug\net9.0\compressed\2sz45fmxpd-t1cqhe9u97.gz
 C:\Users\Daniel\Documents\GitHub\LojaProdutos\LojaProdutos\obj\Debug\net9.0\compressed\5xpms1dylp-c2jlpeoesf.gz
 C:\Users\Daniel\Documents\GitHub\LojaProdutos\LojaProdutos\obj\Debug\net9.0\compressed\viiuzc8n6m-sejl45xvog.gz
@@ -466,3 +465,4 @@ C:\Users\Daniel\Documents\GitHub\LojaProdutos\LojaProdutos\obj\Debug\net9.0\Loja
 C:\Users\Daniel\Documents\GitHub\LojaProdutos\LojaProdutos\obj\Debug\net9.0\ref\LojaProdutos.dll
 C:\Users\daniel.ferreira\Documents\Curso CrisTech\LojaProdutos\LojaProdutos\obj\Debug\net9.0\compressed\7tgrl6pcqp-sjqkdj7nwp.gz
 C:\Users\daniel.ferreira\Documents\Curso CrisTech\LojaProdutos\LojaProdutos\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
+C:\Users\Daniel\Documents\GitHub\LojaProdutos\LojaProdutos\obj\Debug\net9.0\compressed\7tgrl6pcqp-sjqkdj7nwp.gz

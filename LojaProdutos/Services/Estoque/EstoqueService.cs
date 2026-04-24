@@ -62,7 +62,7 @@ namespace LojaProdutos.Services.Estoque
                                 {
                                     ProdutoId = total.First().Produtos.Categoria.Id,
                                     CategoriaNome = total.First().Produtos.Categoria.Nome,
-                                    DataCompra = total.First().DataBaixa,   
+                                    DataCompra = total.First().DataBaixa,
                                     Total = total.Sum(c => c.Produtos.Valor)
                                 };
                 var totalGeral = _context.Estoques.Include(x => x.Produtos)
@@ -92,3 +92,4 @@ namespace LojaProdutos.Services.Estoque
             }
         }
     }
+}
